@@ -69,6 +69,11 @@ unsafe fn kamui_fsmash_fx(fighter: &mut L2CAgentBase) {
     }
 }
 
+#[acmd_script( agent = "kamui", script = "game_attacks4charge", category = ACMD_GAME, low_priority )]
+unsafe fn kamui_fsmash_charge(fighter: &mut L2CAgentBase) {
+    
+}
+
 #[acmd_script( agent = "kamui", script = "effect_attacks4charge", category = ACMD_EFFECT )]
 unsafe fn kamui_fsmash_charge_fx(fighter: &mut L2CAgentBase) {
     frame(fighter.lua_state_agent, 5.0);
@@ -82,6 +87,7 @@ unsafe fn kamui_fsmash_charge_fx(fighter: &mut L2CAgentBase) {
 pub fn install() {
     smashline::install_acmd_scripts!(
 		kamui_fsmash,
+	    	kamui_fsmash_charge,
 		kamui_fsmash_fx,
 		kamui_fsmash_charge_fx,
     );
