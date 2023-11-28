@@ -1,5 +1,5 @@
-# corrinFootMoveset
+# Corrin Foot Moveset
 
-Source code for my mod that gives Corrin a foot-inspired moveset :')
+Source code for the Smash Ultimate mod that gives Corrin a foot-inspired moveset :')
 
-If you have any questions regarding any code, you can reach me on discord at LilyLambda#6258
+If you have any questions regarding any code, you can reach me on discord at @LilyLambda
