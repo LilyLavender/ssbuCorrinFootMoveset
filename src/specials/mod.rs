@@ -29,7 +29,7 @@ unsafe extern "C" fn kamui_ryusensya_game_shotmax(agent: &mut L2CAgentBase) {
 
 pub fn install() {
     Agent::new("kamui_ryusensya")
-        .game_acmd("game_regular", kamui_ryusensya_game_regular, Default)
-        .game_acmd("game_shotmax", kamui_ryusensya_game_shotmax, Default)
+        .game_acmd("game_regular_feet", kamui_ryusensya_game_regular, Default)
+        .game_acmd("game_shotmax_feet", kamui_ryusensya_game_shotmax, Default)
         .install();
 }

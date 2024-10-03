@@ -171,15 +171,15 @@ unsafe extern "C" fn kamui_effect_attacklw3(agent: &mut L2CAgentBase) {
 
 pub fn install() {
     Agent::new("kamui")
-        .game_acmd("game_attack11", kamui_game_attack11, Default)
-        .effect_acmd("effect_attack11", kamui_effect_attack11, Default)
-        .game_acmd("game_attackhi3", kamui_game_attackhi3, Default)
-        .effect_acmd("effect_attackhi3", kamui_effect_attackhi3, Default)
-        .game_acmd("game_attacks3", kamui_game_attacks3, Default)
-        .effect_acmd("effect_attacks3", kamui_effect_attacks3, Default)
-        .game_acmd("game_attackdash", kamui_game_attackdash, Default)
-        .effect_acmd("effect_attackdash", kamui_effect_attackdash, Default)
-        .game_acmd("game_attacklw3", kamui_game_attacklw3, Default)
-        .effect_acmd("effect_attacklw3", kamui_effect_attacklw3, Default)
+        .game_acmd("game_attack11_feet", kamui_game_attack11, Default)
+        .effect_acmd("effect_attack11_feet", kamui_effect_attack11, Default)
+        .game_acmd("game_attackhi3_feet", kamui_game_attackhi3, Default)
+        .effect_acmd("effect_attackhi3_feet", kamui_effect_attackhi3, Default)
+        .game_acmd("game_attacks3_feet", kamui_game_attacks3, Default)
+        .effect_acmd("effect_attacks3_feet", kamui_effect_attacks3, Default)
+        .game_acmd("game_attackdash_feet", kamui_game_attackdash, Default)
+        .effect_acmd("effect_attackdash_feet", kamui_effect_attackdash, Default)
+        .game_acmd("game_attacklw3_feet", kamui_game_attacklw3, Default)
+        .effect_acmd("effect_attacklw3_feet", kamui_effect_attacklw3, Default)
         .install();
 }

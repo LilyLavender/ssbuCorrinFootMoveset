@@ -120,9 +120,7 @@ unsafe extern "C" fn kamui_effect_attacks4(agent: &mut L2CAgentBase) {
     }
 }
 
-unsafe extern "C" fn kamui_game_attacks4charge(agent: &mut L2CAgentBase) {
-    
-}
+unsafe extern "C" fn kamui_game_attacks4charge(agent: &mut L2CAgentBase) {}
 
 unsafe extern "C" fn kamui_effect_attacks4charge(agent: &mut L2CAgentBase) {
     frame(agent.lua_state_agent, 5.0);
@@ -173,17 +171,17 @@ unsafe extern "C" fn kamui_effect_attacklw4(agent: &mut L2CAgentBase) {
 
 pub fn install() {
     Agent::new("kamui")
-        .game_acmd("game_attackhi4", kamui_game_attackhi4, Default)
-        .effect_acmd("effect_attackhi4", kamui_effect_attackhi4, Default)
-        .game_acmd("game_attacks4", kamui_game_attacks4, Default)
-        .game_acmd("game_attacks4hi", kamui_game_attacks4, Default)
-        .game_acmd("game_attacks4lw", kamui_game_attacks4, Default)
-        .effect_acmd("effect_attacks4", kamui_effect_attacks4, Default)
-        .effect_acmd("effect_attacks4hi", kamui_effect_attacks4, Default)
-        .effect_acmd("effect_attacks4lw", kamui_effect_attacks4, Default)
-        .game_acmd("game_attacks4charge", kamui_game_attacks4charge, Default)
-        .effect_acmd("effect_attacks4charge", kamui_effect_attacks4charge, Default)
-        .game_acmd("game_attacklw4", kamui_game_attacklw4, Default)
-        .effect_acmd("effect_attacklw4", kamui_effect_attacklw4, Default)
+        .game_acmd("game_attackhi4_feet", kamui_game_attackhi4, Default)
+        .effect_acmd("effect_attackhi4_feet", kamui_effect_attackhi4, Default)
+        .game_acmd("game_attacks4_feet", kamui_game_attacks4, Default)
+        .game_acmd("game_attacks4hi_feet", kamui_game_attacks4, Default)
+        .game_acmd("game_attacks4lw_feet", kamui_game_attacks4, Default)
+        .effect_acmd("effect_attacks4_feet", kamui_effect_attacks4, Default)
+        .effect_acmd("effect_attacks4hi_feet", kamui_effect_attacks4, Default)
+        .effect_acmd("effect_attacks4lw_feet", kamui_effect_attacks4, Default)
+        .game_acmd("game_attacks4charge_feet", kamui_game_attacks4charge, Default)
+        .effect_acmd("effect_attacks4charge_feet", kamui_effect_attacks4charge, Default)
+        .game_acmd("game_attacklw4_feet", kamui_game_attacklw4, Default)
+        .effect_acmd("effect_attacklw4_feet", kamui_effect_attacklw4, Default)
         .install();
 }
